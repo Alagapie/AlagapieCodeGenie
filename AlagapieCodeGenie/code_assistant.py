@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 st.set_page_config(
     page_icon=":brain:",
-    page_title="Alagapie Translator app",
+    page_title="Alagapie CodeGenie",
     layout="centered"
 )
 api_key = st.secrets["general"]["GOOGLE_API_KEY"]
@@ -30,7 +30,7 @@ def code(programming_language, input_text):
         }
     )
     return response.content
-st.title('👨‍💻  Alagapie CodeGenie')
+st.markdown("<h1 style='text-align: center;'>👨‍💻  Alagapie CodeGenie</h1>", unsafe_allow_html=True)
 st.sidebar.title('Select a Programming Language')
 programming_language = st.sidebar.selectbox(
     'Choose a Programming Language',
