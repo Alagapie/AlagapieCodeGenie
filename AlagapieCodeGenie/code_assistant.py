@@ -30,7 +30,8 @@ def code(programming_language, input_text):
         }
     )
     return response.content
-st.markdown("<h1 style='text-align: center;'>👨‍💻  Alagapie CodeGenie</h1>", unsafe_allow_html=True)
+st.write("## 👨‍💻  Alagapie CodeGenie")
+
 st.sidebar.title('Select a Programming Language')
 programming_language = st.sidebar.selectbox(
     'Choose a Programming Language',
