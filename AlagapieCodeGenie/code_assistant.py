@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 
 st.set_page_config(
-    page_icon=":code:",
+    page_icon=":brain:",
     page_title="Alagapie Translator app",
     layout="centered"
 )
